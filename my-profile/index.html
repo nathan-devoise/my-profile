@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nathan Devoise's Profile</title>
+    <meta name="description" content="This is the profile of Nathan">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lien vers le fichier de style externe -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Lien vers Font Awesome -->
+    <style>
+        body {
+            background-color: #F7F9FC;
+            color: #575F7D;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 17px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            color: #575F7D; /* Changement de couleur */
+            font-size: 24px; /* Réduire la taille du texte */
+            font-weight: 900;
+        }
+
+        h2 {
+            color: #69B380;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: #6B72E1;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        a:hover {
+            color: white; /* Texte reste blanc au survol */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+            gap: 0; /* Pas d'espace entre les colonnes */
+        }
+
+        .column {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1);
+            background-color: #f9f9f9;
+            margin: 0; /* Pas d'espace entre les cases */
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .text {
+            font-size: 1em;
+        }
+
+        .circular-image {
+            border-radius: 50%; /* Crée une forme circulaire */
+            display: block;
+            margin: 0 auto; /* Centre l'image horizontalement */
+            margin-bottom: 20px; /* Ajoute un espace en bas de l'image */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 5px 10px; /* Réduction de la taille du bouton */
+            background-color: #6B72E1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: black; /* Changement de couleur au survol */
+        }
+
+        .icon {
+            font-size: 24px; /* Augmentation de la taille des icônes */
+        }
+
+        /* Media query for tablets */
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+                gap: 20px; /* Add space between columns */
+            }
+        }
+
+        /* Media query for phones */
+        @media (max-width: 767px) {
+            .grid-container {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="column" style="margin: 10px;"> <!-- Ajuster la marge pour réduire l'espace autour de la boîte -->
+            <h1>Hello, It's Nathan</h1> <!-- Modification de la couleur et de la police -->
+            <img src="images/profile.jpeg" alt="Nathan Devoise" width="150" class="circular-image">
+            <div class="text">
+                In life, I am passionate about several things. Namely judo and competition; I hold a black belt in judo 🥋.
+                Additionally, in the restaurant, I work 7 hours a week at a restaurant 👨🏻‍🍳. I am also passionate about finance and trading, which occupies much of my time and particularly interests me 📈.
+            </div>
+            <a href="https://www.lewagon.com" class="button" target="_blank">Discover Le Wagon</a>
+        </div>
+    </header>
+
+    <section class="grid-container">
+        <div class="div-box">
+            <div class="column">
+                <h2>Judo and Competition 🥋</h2>
+                <div class="text">
+                    Since I was young, I have been practicing judo. It's a sport that is highly prevalent within my family and has been with me since I was 6 years old. I achieved my black belt at the age of 16, and I have also participated in numerous competitions since I was a child. This helps to motivate me and build my mental strength.
+                </div>
+            </div>
+        </div>
+
+        <div class="div-box">
+            <div class="column">
+                <h2>Restauration 👨🏻‍🍳</h2>
+                <div class="text">
+                    For the past 2 years, I have been working as a waiter in a restaurant, where I work 7 hours a week. Both the restaurant industry and serving are things I particularly enjoy. I take pleasure in working in this restaurant every weekend and serving the customers.
+                </div>
+            </div>
+        </div>
+
+        <div class="div-box">
+            <div class="column">
+                <h2>Finance and Trading 📈📉</h2>
+                <div class="text">
+                    Finance and trading are two fields I have a passion for. I would like to work in these areas in the future. I spend a lot of time keeping myself informed about economic markets and stock trends, aiming to gain as much knowledge as possible to succeed in these endeavors.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="column">
+            <div class="title">Follow me</div>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100079356873761&locale=fr_FR" target="_blank">
+                        <i class="fab fa-facebook-square icon"></i> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/nathan_devoise/" target="_blank">
+                        <i class="fab fa-instagram-square icon"></i> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Fluxy202" target="_blank">
+                        <i class="fab fa-twitter-square icon"></i> Twitter
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
